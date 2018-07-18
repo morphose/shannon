@@ -14,7 +14,7 @@
          verbose="true"
 >
     <testsuites>
-        <testsuite name="Humanizer Test Suite">
+        <testsuite name="Morphose Test Suite">
             <directory suffix=".php">./tests/</directory>
         </testsuite>
     </testsuites>
