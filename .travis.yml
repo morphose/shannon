@@ -19,6 +19,6 @@ deploy:
   github-token: $GITHUB_TOKEN
   local-dir: docs/.vuepress/dist
   target-branch: master
-  repo: git@github.com:morphose/morphose.github.io.git
+  repo: morphose/morphose.github.io
   on:
     branch: master
