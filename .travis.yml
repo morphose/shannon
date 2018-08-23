@@ -6,3 +6,19 @@ php:
 
 before_script:
   - composer install --no-interaction
+  - yarn install
+
+script:
+  - yarn docs:build
+
+deploy:
+  provider: pages
+  committer-from-gh: true
+  skip-cleanup: true
+  keep-history: true
+  github-token: $GITHUB_TOKEN
+  local-dir: docs/.vuepress/dist
+  target-branch: master
+  repo: git@github.com:morphose/morphose.github.io.git
+  on:
+    branch: master
