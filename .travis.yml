@@ -4,11 +4,14 @@ php:
   - 7.1
   - 7.2
 
-before_script:
-  - composer install --no-interaction
+install:
+  - composer install
   - yarn install
 
-script:
+test:
+  - phpunit
+
+build:
   - yarn docs:build
 
 deploy:
