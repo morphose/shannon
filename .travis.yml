@@ -1,20 +1,19 @@
 language: php
 
 php:
-  - 7.1
   - 7.2
-
-install:
-  - composer install
-  - yarn install
+  - 7.1
 
 jobs:
   include:
     - stage: test
+      install:
+        - composer install
       script: phpunit
-    - stage: build
-      script: yarn docs:build
     - stage: deploy
+      install:
+        - yarn install
+      script: yarn docs:build
       deploy:
         provider: pages
         committer-from-gh: true
