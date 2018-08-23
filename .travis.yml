@@ -8,20 +8,21 @@ install:
   - composer install
   - yarn install
 
-test:
-  - phpunit
-
-build:
-  - yarn docs:build
-
-deploy:
-  provider: pages
-  committer-from-gh: true
-  skip-cleanup: true
-  keep-history: true
-  github-token: $GITHUB_TOKEN
-  local-dir: docs/.vuepress/dist
-  target-branch: master
-  repo: morphose/morphose.github.io
-  on:
-    branch: master
+jobs:
+  include:
+    - stage: test
+      script: phpunit
+    - stage: build
+      script: yarn docs:build
+    - stage: deploy
+      deploy:
+        provider: pages
+        committer-from-gh: true
+        skip-cleanup: true
+        keep-history: true
+        github-token: $GITHUB_TOKEN
+        local-dir: docs/.vuepress/dist
+        target-branch: master
+        repo: morphose/morphose.github.io
+        on:
+          branch: master
