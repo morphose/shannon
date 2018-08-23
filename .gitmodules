@@ -1,0 +1,3 @@
+[submodule "morphose.github.io"]
+	path = docs/.vuepress/dist
+    url = git@github.com:morphose/morphose.github.io.git
