@@ -4,12 +4,11 @@ php:
   - 7.2
   - 7.1
 
+install:
+  - composer install
+
 jobs:
   include:
-    - stage: test
-      install:
-        - composer install
-      script: phpunit
     - stage: deploy
       install:
         - yarn install
