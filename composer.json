@@ -38,7 +38,7 @@
     },
     "autoload-dev": {
         "psr-4": {
-            "Tests\\": "tests/"
+            "Morphose\\Tests\\": "tests/"
         }
     },
     "minimum-stability": "dev",
