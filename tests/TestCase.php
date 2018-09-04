@@ -1,6 +1,6 @@
 <?php
 
-namespace Tests;
+namespace Morphose\Tests;
 
 /**
  * Class TestCase
