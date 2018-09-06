@@ -6,7 +6,7 @@
     <a href="https://travis-ci.org/morphose/morphose"><img src="https://travis-ci.org/morphose/morphose.svg" alt="Build Status"></a>
     <a href="https://packagist.org/packages/morphose/morphose"><img src="https://poser.pugx.org/morphose/morphose/d/total.svg" alt="Total Downloads"></a>
     <a href="https://packagist.org/packages/morphose/morphose"><img src="https://poser.pugx.org/morphose/morphose/v/stable.svg" alt="Latest Stable Version"></a>
-    <a href="https://packagist.org/packages/morphose/morphose"><img src="https://poser.pugx.org/morphose/morphose/license.svg" alt="License"></a>
+    <a href="https://opensource.org/licenses/MIT"><img src="https://poser.pugx.org/morphose/morphose/license.svg" alt="License"></a>
 </p>
 
 ## About
