@@ -1,24 +1,22 @@
+language: php
+
+php:
+  - '7.2'
+
+install:
+  - composer install
+
 jobs:
   include:
-    - branches:
-        only:
-          - master
+    - stage: deploy
       install:
-        - composer install
-      name: phpunit
-      php: '7.2'
-      stage: test
-    - branches:
-        only:
-          - master
+        - yarn install
+      script: yarn docs:build
       deploy:
         provider: pages
         committer-from-gh: true
         skip-cleanup: true
         github-token: $GITHUB_TOKEN
         local-dir: docs/.vuepress/dist
-      install:
-          - yarn install
-      name: docs
-      script: yarn docs:build
-      stage: deploy
+        on:
+          branch: master
