@@ -2,7 +2,7 @@
  * @var {Object} module
  */
 module.exports = {
-    title: 'Morphose',
+    title: 'Shannon',
     description: 'Data morphose for PHP humans.',
     themeConfig: {
         logo: '/images/morphose.svg',

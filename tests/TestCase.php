@@ -1,10 +1,10 @@
 <?php
 
-namespace Morphose\Tests;
+namespace Morphose\Shannon\Tests;
 
 /**
  * Class TestCase
- * @package Tests
+ * @package Morphose\Shannon\Tests
  */
 abstract class TestCase extends \Orchestra\Testbench\TestCase
 {

@@ -10,11 +10,10 @@
          processIsolation="false"
          stopOnError="false"
          stopOnFailure="false"
-         syntaxCheck="true"
          verbose="true"
 >
     <testsuites>
-        <testsuite name="Morphose Test Suite">
+        <testsuite name="Shannon Test Suite">
             <directory suffix=".php">./tests/</directory>
         </testsuite>
     </testsuites>
