@@ -21,7 +21,7 @@ Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut ferm
 Maecenas sed diam eget risus varius blandit sit amet non magna. Cras mattis consectetur purus sit amet fermentum. Donec sed odio dui. Maecenas faucibus mollis interdum. Donec sed odio dui.
 
 ```bash
-composer install morphose/morphose
+composer install morphose/shannon
 ```
 
 ## Vestibulum Sem

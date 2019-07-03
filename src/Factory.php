@@ -1,10 +1,10 @@
 <?php
 
-namespace Morphose;
+namespace Morphose\Shannon;
 
 /**
  * Class Factory
- * @package Morphose
+ * @package Morphose\Shannon
  */
 class Factory
 {

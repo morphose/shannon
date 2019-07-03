@@ -1,10 +1,10 @@
 <?php
 
-namespace Morphose\Tests;
+namespace Morphose\Shannon\Tests;
 
 /**
  * Class BasicTest
- * @package Tests
+ * @package Morphose\Shannon\Tests
  */
 class BasicTest extends TestCase
 {

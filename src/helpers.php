@@ -1,6 +1,6 @@
 <?php
 
-use Morphose\Factory as Morphose;
+use Morphose\Shannon\Factory as Shannon;
 
 if (!function_exists('humanize')) {
     /**
@@ -10,6 +10,17 @@ if (!function_exists('humanize')) {
      */
     function humanize($bytes, $abbreviate = true)
     {
-        return (new Morphose($bytes))->humanize($abbreviate);
+        return shannon($bytes)->humanize($abbreviate);
+    }
+}
+
+if (!function_exists('shannon')) {
+    /**
+     * @param int $bytes
+     * @return Shannon
+     */
+    function shannon($bytes)
+    {
+        return new Shannon($bytes);
     }
 }
